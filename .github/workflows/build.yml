@@ -7,7 +7,7 @@ branches:
 tags:
 - "v*"
 pull_request:
-workflow_disapatch:
+workflow_dispatch:
 
 jobs:
 build:
@@ -36,7 +36,7 @@ steps:
   - name: Upload artifacts
     uses: actions/upload-artifact@v4
     with:
-      name: levilauncher-android-mod-template
+      name: FastMobSpawn
       path: build-*/*.levipack
 
   - name: Publish release assets
